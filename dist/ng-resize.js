@@ -2,7 +2,7 @@
 
     var ngResize = angular.module('ngResize', []);
 
-    ngResize.provider('resize', function resizeProvider() {
+    ngResize.provider('ngResize', function resizeProvider() {
 
         // default throttle time 30fps
         this.throttle = 32;
@@ -91,6 +91,8 @@
             if (resize.initBind) {
                 resize.bind();
             }
+            
+            return this;
 
         }];
 
