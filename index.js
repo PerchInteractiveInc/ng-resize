@@ -121,3 +121,4 @@
     });
 
 })(window, window.angular);
+module.exports = 'ngResize';
